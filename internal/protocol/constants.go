@@ -8,6 +8,8 @@ const (
 	//MinFrameSize
 	DefaultMinFrameSize   = 2 + 1 + 1 + 4 + 2 + 2
 	DefaultMaxPayloadSize = 64 * 1024 //64kb
+
+	ReadBufSize = 4096 // Size of the read buffer for the parser
 )
 
 // cmd commands
