@@ -54,6 +54,7 @@ func (s *Server) ListenAndServer() error {
 
 		s.Gateway.AddSession(session)
 
+		go handleConnect(conn, session, s)
 	}
 }
 
